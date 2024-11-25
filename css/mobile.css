@@ -1,0 +1,648 @@
+/* General adjustments for mobile screens */
+@media (max-width: 767px) {
+    /* Adjust logo size */
+    .logo img {
+      max-width: 150px; /* Make the logo smaller on mobile */
+    }
+  
+    /* Display the header-top-area on mobile */
+    .header-top-area {
+      display: block !important;
+    }
+  
+    /* Stack the social icons and login vertically */
+    .header-top-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header-social ul, .header-top-action ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 10px 0;
+    }
+  
+    .header-social ul li, .header-top-action ul li {
+      margin: 0 5px;
+    }
+  
+    /* Make navigation vertical and center-aligned */
+    .navbar-wrap {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block !important; /* Ensure mobile menu is visible */
+    }
+  
+    .main-header .header-action ul {
+      justify-content: center;
+    }
+  
+    /* Mobile Menu adjustments */
+    .navbar-wrap ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .navbar-wrap ul li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    /* Adjust padding and margins for mobile screens */
+    .container-full-padding {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    /* Countdown area positioning */
+    .header-top-offer {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Optional: Adjust further for tablet sizes */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header-top-right {
+      justify-content: center;
+    }
+  
+    .navbar-wrap ul {
+      justify-content: center;
+    }
+  
+    .logo img {
+      max-width: 200px;
+    }
+  }
+  
+  /* Responsive styles for slider area */
+@media (max-width: 767px) {
+  .slider-area .slider-content h2 {
+    font-size: 24px; /* Adjust font size of main text */
+    padding: 0 10px; /* Add padding for better spacing */
+  }
+
+  .slider-area .slider-content p {
+    font-size: 16px; /* Adjust the subtitle font size */
+    margin-top: 10px;
+  }
+
+  .slider-area .slider-content a {
+    font-size: 14px; /* Adjust button font size */
+    padding: 10px 20px; /* Adjust button padding */
+    margin-top: 15px;
+  }
+
+  /* Particle effect adjustments */
+  #particles-js {
+    display: none; /* Optionally hide particles on small screens to improve performance */
+  }
+
+  /* Adjust slider padding */
+  .slider-area .container {
+    padding: 0 15px;
+  }
+
+  /* Reduce padding for the section */
+  .slider-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Responsive styles for brand area */
+@media (max-width: 767px) {
+  .brand-area {
+    padding: 30px 0; /* Adjust padding for mobile */
+  }
+
+  .brand-item {
+    margin-bottom: 20px; /* Space between logos */
+  }
+
+  .brand-active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand-item img {
+    max-width: 60px; /* Adjust logo size for mobile */
+  }
+
+  /* Make sure brand logos are centered and stacked */
+  .brand-active .col-xl-2 {
+    flex: 0 0 33.33%; /* 3 logos per row */
+    max-width: 33.33%;
+  }
+
+  .brand-active .col-xl-2:nth-child(odd) {
+    margin-right: 0;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-area .slider-content h2 {
+    font-size: 30px;
+  }
+
+  .slider-area .slider-content p {
+    font-size: 18px;
+  }
+
+  .slider-area .slider-content a {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  /* For brand logos, adjust to fit 4 per row on tablets */
+  .brand-active .col-xl-2 {
+    flex: 0 0 25%; /* 4 logos per row */
+    max-width: 25%;
+  }
+
+  .brand-item img {
+    max-width: 80px;
+  }
+}
+
+
+/* For screens smaller than 767px (Mobile) */
+@media (max-width: 767px) {
+
+  /* General adjustments */
+  .slider-area .slider-content h2 {
+      font-size: 24px;
+      line-height: 1.3;
+  }
+  
+  .slider-area .slider-content p {
+      font-size: 16px;
+  }
+
+  .slider-area .slider-content a.btn {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+
+  /* Portfolio Section */
+  .portfolio .portfolio-item {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+  
+  /* Latest Events Section */
+  .latest-games-items {
+      margin-bottom: 15px;
+      text-align: center;
+  }
+
+  .latest-games-items img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Adjust the text size for section titles */
+  .section-title h2 {
+      font-size: 1.75em;
+  }
+
+  .section-title p {
+      font-size: 1em;
+  }
+  
+  /* About Section */
+  .about-content, .about-img {
+      text-align: center;
+  }
+
+  .about-content h2 {
+      font-size: 1.5em;
+  }
+
+  .about-content p {
+      font-size: 1em;
+  }
+
+  .about-img img {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Adjust the video play button */
+  .about-img a.popup-video img {
+      width: 50px;
+      height: 50px;
+  }
+
+  /* Upcoming Events Carousel */
+  .latest-games-active {
+      display: block;
+  }
+
+  .latest-games-items img {
+      width: 100%;
+      height: auto;
+  }
+  
+  /* Logo Area */
+  .brand-area .brand-item {
+      width: 50%;
+      margin-bottom: 15px;
+  }
+  
+  .brand-active {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  /* Gallery Filter Adjustments */
+  .portfolio-container {
+      display: block;
+  }
+
+  /* Gallery Filter Buttons */
+  #portfolio-flters li {
+      margin: 5px 0;
+      font-size: 14px;
+  }
+}
+
+/* Mobile responsiveness for screens smaller than 767px */
+@media (max-width: 767px) {
+
+  /* General adjustments */
+  .game-manage-area .section-title h2 {
+      font-size: 22px; /* Reduce heading size */
+  }
+
+  /* Adjust the paragraph (aims/objectives description) */
+  .game-manage-area .section-title h2 {
+      font-size: 16px; /* Smaller text for better readability on small screens */
+      line-height: 1.5;
+      margin-bottom: 20px;
+  }
+
+  .about-content ul li {
+      font-size: 14px; /* Reduce font size of list items */
+      line-height: 1.5;
+  }
+
+  .about-content ul li i {
+      font-size: 12px; /* Reduce icon size for smaller screens */
+  }
+
+  /* Add padding to improve spacing on smaller screens */
+  .game-manage-area {
+      padding: 80px 15px;
+  }
+
+  .about-content {
+      padding-left: 0; /* Remove padding for a full-width layout on mobile */
+      padding-right: 0;
+  }
+
+  /* Adjust the margins between list items */
+  .about-content ul li {
+      margin-bottom: 10px;
+  }
+  
+  .section-title {
+      text-align: left; /* Align text to left for smaller screens */
+  }
+  
+  .section-title.title-style-two h2 {
+      font-size: 24px; /* Adjust section title size */
+  }
+
+  /* Ensure no horizontal scrolling */
+  .container {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+}
+
+/* Mobile responsiveness for screens smaller than 767px */
+@media (max-width: 767px) {
+    
+  /* Adjust the section padding */
+  .team-area {
+      padding: 60px 15px; /* Reduce padding for smaller screens */
+  }
+  
+  /* Reduce the size of section title and spacing */
+  .team-area .section-title h2 {
+      font-size: 22px; /* Reduce heading size */
+  }
+
+  .team-area .section-title span {
+      font-size: 14px; /* Adjust subheading font size */
+  }
+
+  /* Adjust the team item container for smaller screens */
+  .team-area .third-team-item {
+      margin-bottom: 20px; /* Reduce margin between team items */
+  }
+
+  /* Image size adjustments */
+  .team-area .third-team-img img {
+      max-width: 100%; /* Make sure images are responsive */
+      height: auto; /* Ensure images scale properly */
+  }
+
+  /* Reduce team content font size */
+  .team-area .third-team-content h5 {
+      font-size: 16px; /* Smaller font for names */
+  }
+
+  .team-area .third-team-content span {
+      font-size: 14px; /* Smaller font for roles */
+  }
+
+  /* Column adjustments for smaller screens */
+  .team-area .col-xxl-2, 
+  .team-area .col-xl-3, 
+  .team-area .col-lg-4, 
+  .team-area .col-md-6, 
+  .team-area .col-sm-8 {
+      width: 100%; /* Make each team member take full width on mobile */
+      max-width: 100%; /* Remove fixed column width */
+  }
+
+  /* Remove unwanted extra margin or padding */
+  .custom-container {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+}
+/* General responsiveness for mobile devices */
+@media (max-width: 768px) {
+  /* Adjust font sizes */
+  .section-title h2 {
+      font-size: 24px;
+  }
+
+  /* Stack the tabs vertically on smaller screens */
+  .nav-tabs.row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Ensure icons and text are centered on smaller screens */
+  .nav-tabs .nav-item {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  .nav-tabs .nav-item h4 {
+      font-size: 18px;
+  }
+
+  /* Adjust image size to be more responsive */
+  .tab-content .img-fluid {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  /* Adjust list item padding and font size */
+  .tab-content ul li {
+      font-size: 14px;
+      padding: 5px 0;
+  }
+
+  /* Adjust padding of the main section */
+  .game-manage-area {
+      padding: 60px 20px;
+  }
+}
+
+/* For very small devices (like smaller than 576px) */
+@media (max-width: 576px) {
+  /* Reduce heading sizes further */
+  .section-title h2 {
+      font-size: 20px;
+  }
+
+  /* Further reduce padding */
+  .game-manage-area {
+      padding: 40px 10px;
+  }
+
+  /* Stack images and text vertically */
+  .tab-content .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* Adjust image size */
+  .tab-content .img-fluid {
+      width: 100%;
+      height: auto;
+  }
+
+  /* Reduce padding and font size for list items */
+  .tab-content ul li {
+      font-size: 12px;
+      padding: 3px 0;
+  }
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For larger screens (≥1200px) */
+@media (min-width: 1200px) {
+  .features-item {
+      height: 100%;
+  }
+}
+
+/* For tablets and smaller screens (max-width 768px) */
+@media (max-width: 768px) {
+  .features-area .col-xl-4, 
+  .fact-area .col-lg-3 {
+      flex: 0 0 100%; /* Take full width on small screens */
+      max-width: 100%; /* Ensure full width */
+  }
+
+  .section-title h2 {
+      font-size: 28px; /* Smaller font for titles */
+  }
+
+  .fact-item h2 {
+      font-size: 22px; /* Smaller font for fact numbers */
+  }
+
+  .fact-icon i {
+      font-size: 36px; /* Adjust icon size for smaller screens */
+  }
+
+  .btn-glow-effect {
+      padding: 8px 16px; /* Adjust button padding */
+      font-size: 14px; /* Smaller button font */
+  }
+}
+
+/* For very small mobile devices (max-width 576px) */
+@media (max-width: 576px) {
+  .features-area {
+      padding: 40px 15px; /* Adjust padding */
+  }
+
+  .section-title {
+      margin-bottom: 30px; /* Reduce margin */
+  }
+
+  .fact-item h2 {
+      font-size: 20px; /* Further reduce font size */
+  }
+}
+
+
+/* General styles for the donate-us-area */
+.about-us-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Flexbox layout for responsiveness */
+.about-us-area .row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For larger screens (≥1200px) */
+@media (min-width: 1200px) {
+  .about-us-area .col-lg-7 {
+      padding-right: 30px; /* Space between columns */
+  }
+
+  .about-us-area .col-lg-5 {
+      padding-left: 30px; /* Space between columns */
+  }
+}
+
+/* For tablets and smaller screens (max-width 768px) */
+@media (max-width: 768px) {
+  .about-us-area .col-lg-7,
+  .about-us-area .col-lg-5 {
+      flex: 0 0 100%; /* Take full width on small screens */
+      max-width: 100%; /* Ensure full width */
+      text-align: center; /* Center text on smaller screens */
+  }
+
+  .about-content h4 {
+      font-size: 24px; /* Smaller font for headings */
+  }
+
+  .donation-points {
+      padding: 0; /* Remove padding for lists */
+  }
+
+  .donate-button {
+      width: 100%; /* Full-width button */
+      font-size: 16px; /* Smaller button font */
+      padding: 12px; /* Adjust padding */
+  }
+
+  .account-details {
+      margin-top: 20px; /* Space above account details */
+  }
+}
+
+/* For very small mobile devices (max-width 576px) */
+@media (max-width: 576px) {
+  .about-us-area {
+      padding-top: 60px; /* Reduced padding */
+      padding-bottom: 60px; /* Reduced padding */
+  }
+
+  .about-content h4 {
+      font-size: 20px; /* Further reduce heading font size */
+  }
+
+  .donation-points li {
+      font-size: 14px; /* Smaller font for list items */
+  }
+}
+
+/* General styles for the FAQ section */
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* FAQ list styles */
+.faq-list {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For larger screens (≥1200px) */
+@media (min-width: 1200px) {
+  .faq .section-title {
+      text-align: center; /* Center title on larger screens */
+  }
+
+  .faq-list li {
+      margin-bottom: 15px; /* Space between FAQ items */
+  }
+
+  .faq-list .question {
+      padding: 15px; /* Padding for clickable questions */
+      border: 1px solid #ddd; /* Optional: border for better visibility */
+      border-radius: 5px; /* Rounded corners */
+      cursor: pointer; /* Pointer cursor for clickability */
+  }
+}
+
+/* For tablets and smaller screens (max-width 768px) */
+@media (max-width: 768px) {
+  .faq .section-title h2 {
+      font-size: 24px; /* Smaller heading size */
+  }
+
+  .faq-list li {
+      margin-bottom: 10px; /* Less space between items */
+  }
+
+  .faq-list .question {
+      font-size: 16px; /* Smaller font size for questions */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .faq-list .collapse p {
+      font-size: 14px; /* Smaller font size for answers */
+  }
+}
+
+/* For very small mobile devices (max-width 576px) */
+@media (max-width: 576px) {
+  .faq .section-title h2 {
+      font-size: 20px; /* Further reduce heading font size */
+  }
+
+  .faq-list .question {
+      font-size: 14px; /* Even smaller font for questions */
+      padding: 8px; /* Smaller padding */
+  }
+
+  .faq-list .collapse p {
+      font-size: 12px; /* Smaller font for answers */
+  }
+}
