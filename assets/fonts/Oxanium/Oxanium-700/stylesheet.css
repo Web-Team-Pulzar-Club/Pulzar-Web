@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Oxanium';
+    src: url('Oxanium-Bold.eot');
+    src: url('Oxanium-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Oxanium-Bold.woff2') format('woff2'),
+        url('Oxanium-Bold.woff') format('woff'),
+        url('Oxanium-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
