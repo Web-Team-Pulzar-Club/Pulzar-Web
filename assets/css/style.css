@@ -43,6 +43,7 @@
 
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 @font-face {
     font-family: 'grinddemolished';
     src: url('../fonts/grind_demolished-webfont.woff2') format('woff2'),
@@ -1288,8 +1289,6 @@ ul.minicart .cart-price .new {
 	letter-spacing: -3px;
 	text-transform: uppercase;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
 .cracked-text {
     font-family: 'Dosis', sans-serif;
