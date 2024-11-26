@@ -4869,6 +4869,9 @@ ul.minicart .cart-price .new {
 .footer-social ul li:nth-child(4) a {
 	background: #1565c0;
 }
+.footer-social ul li:nth-child(5) a {
+	background: green;
+}
 .footer-newsletter input {
 	width: 100%;
 	background: #24182d;
