@@ -1767,6 +1767,11 @@ ul.minicart .cart-price .new {
 	box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.23);
 	border-radius: 6px;
 }
+.about-img > video {
+	width: 100%;
+	box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.23);
+	border-radius: 6px;
+}
 .about-img .popup-video {
 	position: absolute;
 	left: 50%;

@@ -888,19 +888,40 @@
                 <!-- upcoming-event-area-end -->
 
                 <!-- about-story-area -->
-                <section class="about-us-area pt-120 pb-120" id="about-story-area">
+                <section class="about-us-area pt-120 pb-70" id="about-story-area">
+                    <style>
+                        @media (max-width: 767px) {
+                            .section-title-intro-video {
+                                text-align: center;
+                            }
+                        }
+                        .about-video {
+                            display: flex !important;
+                            justify-content: center !important; /* Centers the video horizontally */
+                            align-items: center !important;    /* Centers the video vertically */
+                            height: 100% !important;           /* Ensures the container takes the full height of the column */
+                            text-align: center !important;     /* Optional: aligns text if needed */
+                        }
+
+                        .about-video .popup-video {
+                            max-width: 100% !important; /* Ensures responsiveness */
+                            height: auto !important;    /* Maintains aspect ratio */
+                        }
+                    </style>
+
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 order-0 order-lg-2">
-                                <div class="about-img">
-                                    <img src="assets/img/images/about_us_img.jpg" alt="">
-                                    <a href="https://www.youtube.com/watch?v=mirtuv7oNeQ" class="popup-video"><img src="assets/img/icon/play_btn.png" style="filter: grayscale(1);" alt=""></a>
+                            <div class="col-lg-6 order-0 order-lg-2 d-flex justify-content-center align-items-center pb-40">
+                                <div class="about-video">
+                                    <!-- <img src="assets/img/images/about_us_img.jpg" alt=""> -->
+                                    <video src="assets/videos/pulzar-club-intro.mp4" class="popup-video" width="619" autoplay muted controls></video>
+                                    <!-- <a href="https://www.youtube.com/watch?v=mirtuv7oNeQ" class="popup-video"><img src="assets/img/icon/play_btn.png" style="filter: grayscale(1);" alt=""></a> -->
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="section-title title-style-two mb-45">
-                                    <span>about story</span>
-                                    <h2>Who <span>We</span> Are</h2>
+                                <div class="section-title-intro-video title-style-two">
+                                    <span>About Story</span>
+                                    <h2>Who <span style="color:#66fcf1;">We</span> Are</h2>
                                 </div>
                                 <div class="about-content">
                                     <p>PULZAR is the first-ever academic society established at HNDIT Labuduwa, targeting a wide range of students island-wide to enhance academic activities with modern, innovative approaches.  </p>
