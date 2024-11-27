@@ -24,7 +24,6 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/mobile.css">
-
         <link rel="stylesheet" href="assets/css/portfolio.css">
 
         <!-- Bootstrap CSS -->
@@ -452,8 +451,53 @@
     border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
 }
 
-
-        
+        .form{
+            padding-bottom: 200px;
+        }
+        #contactForm {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #name,#email,#subject {
+            width: 100%;
+            padding: 10px;
+            /* margin: 10px 0; */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* button {
+            padding: 10px 15px;
+            
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 5px;
+        } */
+        .submit-btn {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 15px;
+            
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cancel-btn {
+            background-color: #f44336; /* Red */
+            color: white;
+            padding: 10px 15px;
+            
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }  
+        .contact-title{
+            text-align: center;
+            padding-bottom: 30px;
+        }     
 
 </style>
         </style>
@@ -535,7 +579,7 @@
                             <div class="main-menu">
                                 <nav>
                                     <div class="logo">
-                                        <a href="#"><img src="assets/img/logo/pulzar-logo.png" alt="Logo" style="max-width: 250px;"></a>
+                                        <a href="index.html"><img src="assets/img/logo/pulzar-logo.png" alt="Logo" style="max-width: 250px;"></a>
                                     </div>
                                     <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                         <ul>
@@ -1085,8 +1129,8 @@
                                 <div class="third-team-content">
                                     <div class="main-bg"></div>
                                     <div class="hover-bg"></div>
-                                    <h5><a href="#">Not Apponted Yet</a></h5>
-                                    <span>N/A</span>
+                                    <h5><a href="#">Gihiru Thathsara</a></h5>
+                                    <span>Treasurer</span>
                                 </div>
                             </div>
                         </div>
@@ -1098,8 +1142,8 @@
                                 <div class="third-team-content">
                                     <div class="main-bg"></div>
                                     <div class="hover-bg"></div>
-                                    <h5><a href="#">Not Apponted Yet</a></h5>
-                                    <span>N/A</span>
+                                    <h5><a href="#">Supun Randika</a></h5>
+                                    <span>Treasurer</span>
                                 </div>
                             </div>
                         </div>
@@ -1325,7 +1369,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-6">
+                        <!-- <div class="col-xl-4 col-md-6">
                             <div class="features-item mb-30">
                                 <div class="features-head mb-35">
                                     <div class="product-tag"><a href="#">PDF</a></div>
@@ -1333,7 +1377,7 @@
                                     <a class='btn-glow-effect' href="../documents/" Download>Download <i class='fas fa-file-pdf'></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="fact-area pt-90">
                         <div class="row justify-content-center">
@@ -1491,7 +1535,30 @@
                     </ul>
                 </div>
             </section><!-- End F.A.Q Section -->
-              
+            <section class="login-form">
+                <div class="form">
+                    <h2 class="contact-title">Contact Us</h2>
+                    <form id="contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="subject">Subject:</label>
+                        <textarea id="subject" name="subject" rows="4" required></textarea>
+                    
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <button type="button" class="cancel-btn" onclick="cancelForm()">Cancel</button>
+                    </form>
+                    
+                    <script>
+                        function cancelForm() {
+                            document.getElementById("contactForm").reset();
+                        }
+                    </script>
+                </div>
+            </section>
 
             </div>
             <!-- area-bg-two-end -->
