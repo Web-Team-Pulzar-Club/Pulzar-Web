@@ -516,6 +516,7 @@ ul.minicart .cart-content a:hover,
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+	padding-top: 10px;
 }
 .navbar-wrap {
 	display: flex;
