@@ -2,7 +2,7 @@
 @media (max-width: 767px) {
     /* Adjust logo size */
     .logo img {
-      max-width: 150px; /* Make the logo smaller on mobile */
+      max-width: 150px !important; /* Make the logo smaller on mobile */
     }
   
     /* Display the header-top-area on mobile */
@@ -77,7 +77,7 @@
     }
   
     .logo img {
-      max-width: 200px;
+      max-width: 200px !important;
     }
   }
   

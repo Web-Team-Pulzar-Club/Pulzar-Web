@@ -545,25 +545,8 @@
                         <div class="col-lg-6 d-none d-lg-block">
                             <div class="header-top-offer">
                                 <p>Next Event In&nbsp;</p>
-                                <span class="coming-time" id="countdown" data-countdown="2024/10/20"></span> &nbsp;Days
+                                <span class="coming-time" id="countdown"></span> &nbsp; 0 Days
                             </div>
-
-                            <script>
-                                // Enter a target date
-                                const targetDate = new Date("2024-11-29").getTime();
-                        
-                                //  countdown every second
-                                const countdownInterval = setInterval(() => {
-                                    const now = new Date().getTime();
-                                    const timeRemaining = targetDate - now;
-                        
-                                    // Calculate the remaining days
-                                    const days = Math.ceil(timeRemaining / (1000 * 60 * 60 * 24));
-                        
-                                    // Display the countdown in days
-                                    document.getElementById("countdown").innerText = `0${days}`;
-                                }, 1000);
-                            </script>
                         </div>
                         <div class="col-lg-6">
                             <div class="header-top-right">
@@ -602,7 +585,7 @@
                             <div class="main-menu">
                                 <nav>
                                     <div class="logo">
-                                        <a href="index.html"><img src="assets/img/logo/pulzar-logo.png" alt="Logo" style="max-width: 250px;"></a>
+                                        <a href="index.html"><img src="assets/img/logo/pulzar-logo.png" alt="Logo" style="max-width: 350px;"></a>
                                     </div>
                                     <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                         <ul>
@@ -1872,8 +1855,8 @@
                                     <ul>
                                         <li><a href="https://web.facebook.com/pulzarroff"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="https://vt.tiktok.com/ZSjX4Powa/"><i class="fab fa-tiktok"></i></a></li>
-                                        <!-- <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li> -->
+                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         <li><a href="https://whatsapp.com/channel/0029Vay5O4w1t90dWn9Sv91J" style="background-color: rgb(36, 235, 36) !important;"><i class="fa-brands fa-whatsapp"></i></a></li>
                                     </ul>
                                 </div>
