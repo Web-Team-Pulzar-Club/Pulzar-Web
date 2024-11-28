@@ -434,27 +434,30 @@ $('.latest-games-active').owlCarousel({
 	autoplaySpeed: 1000,
 	navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 	nav: true,
-	dots: false,
+	dots: true,
 	responsive: {
 		0: {
 			items: 1,
 			center: false,
 			nav: false,
+			autoplay: true,
+			dots: true
 		},
 		575: {
 			items: 1,
 			center: false,
+			autoplay: true,
 		},
 		768: {
 			items: 2,
 			center: false,
 		},
 		992: {
-			items: 3,
+			items: 2,
 			center: false,
 		},
 		1200: {
-			items: 3
+			items: 2
 		},
 	}
 })
